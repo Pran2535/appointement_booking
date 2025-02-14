@@ -7,7 +7,6 @@ import Doctors from './pages/Doctors'
 import Login from './pages/Login'
 import Contact from './pages/Contact'
 import MyProfile from './pages/MyProfile'
-import Appointment from './pages/Appointment'
 
 const App = () => {
   return (
@@ -15,13 +14,12 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/my-appointments' element={<MyAppointments />} />
+        <Route path='/myappointments' element={<MyAppointments />} />
         <Route path='/doctors' element={<Doctors/>}/>
         <Route path='/doctors/:speciality' element={<Doctors/>}/>
         <Route path ='/login' element={<Login/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path ='/my-profile' element={<MyProfile/>}/>
-        <Route path ='/appointments/:docId' element={<Appointment/>}/>
       </Routes>
     </div>
   )
