@@ -13,7 +13,7 @@ import Navbar from './components/Navbar'
 const App = () => {
   return (
     <div className='mx-4 sm:mx-[10%]'>
-      <Navbar/>{ /* mounted navbar component before routes so that it gets displayed over the all routes */}
+      <Navbar/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
